@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Are we there yet? -play</title>
+		<meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<style>
+			h1 { font-family: Arial; font-size: 1.5rem; color: #2b5873; }
+			div.deck { max-width: 1100px; min-width: 70vw; margin: 0 auto; }
+			div.card { height: 170px; width: 100px; border: 1px solid black; border-radius: 5px; display:inline-block; margin-right: 10px; margin-bottom: 10px; overflow: hidden; }
+			div.card div.pack { height: 20px; background-color: #809BAB; color: #2b5873; font-family: Arial; padding: 10px; }
+			div.card div.icon { height: 90px; display: flex; justify-content: center; align-items: center; }
+			div.card div.icon img { height: 85px; width: 85px; }
+			div.card div.flavour { height: 40px; display: flex; justify-content: center; align-items: center; }
+			div.card div.flavour img { height: 40px; width: 40px; }
+			p { font-family: Arial; color: #2b5873; }
+			div.card.not-selected { opacity: 0.3; }
+			button { font-family: Arial; color: #2b5873; text-decoration: none; border: 1px solid #2b5873; border-radius: 5px; padding: 10px; display: inline-block; width: 100%; }
+			button:hover { background-color: #809BAB; color: white; }
+			.d-none { display: none !important; }
+			.points { width: 100%; text-align: center; color: #2b5873;  }
+			.points .score { font-size: 10rem; font-family: Arial; }
+			.points .label { font-size: 3rem; font-family: Arial; }
+			.deck-parent-play div.card { transition: 1s; }
+			.deck-parent-play div.card.earned { opacity: 0; }
+		</style>
+		<script src="deck.js"></script>
+
+		<div class="deck deck-select">
+
+			<h1>Remove cards</h1>
+
+			<p>Click on any cards you want to remove from the game</p>
+
+			<div class="deck-parent"></div>
+
+			<button id="play-go">Play</button>
+
+			<script>showAllCardsForSelection(".deck-parent");</script>
+
+		</div>
+
+		<div class="deck deck-play d-none">
+			<h1>Are we there yet?</h1>
+			<div class="deck-parent-play"></div>
+			<div class="points points-playing">
+				<span class="score">0</span>
+				<span class="label">pts</span>
+			</div>
+		</div>
+
+		<div class="deck deck-gameover d-none">
+			<h1>Game over</h1>
+			<div class="points points-final">
+				<span class="score">0</span>
+				<span class="label">pts</span>
+			</div>
+		</div>
+
+	</body>
+</html>
