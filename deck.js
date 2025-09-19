@@ -1,5 +1,5 @@
 cards = [
-	/*{pack:"colours",flavours:["splodge/blue"]},
+	{pack:"colours",flavours:["splodge/blue"]},
 	{pack:"colours",flavours:["splodge/green"]},
 	{pack:"colours",flavours:["splodge/red"]},
 	{pack:"colours",flavours:["splodge/black"]},
@@ -27,7 +27,7 @@ cards = [
 	{pack:"towns",icon:"fountain"},
 	{pack:"infrastructure",icon:"airport"},
 	{pack:"infrastructure",icon:"barrier"},
-	{pack:"infrastructure",icon:"pitch"},*/
+	{pack:"infrastructure",icon:"pitch"},
 	{pack:"infrastructure",icon:"stadium"},
 	{pack:"infrastructure",icon:"windmill"},
 	{pack:"infrastructure",icon:"crane"},
