@@ -1,4 +1,5 @@
 cards = [
+	{pack:"hiking",icon:"log"},
 	{pack:"colours",flavours:["splodge/blue"]},
 	{pack:"colours",flavours:["splodge/green"]},
 	{pack:"colours",flavours:["splodge/red"]},
@@ -32,7 +33,7 @@ cards = [
 	{pack:"infrastructure",icon:"windmill"},
 	{pack:"infrastructure",icon:"crane"},
 	{pack:"transport",icon:"train"},
-	{pack:"transport",icon:"lorry",qty:5},
+	{pack:"transport",icon:"lorry",qty:3},
 	{pack:"transport",icon:"motorbike",qty:3}
 ];
 
